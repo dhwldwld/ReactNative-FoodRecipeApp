@@ -19,6 +19,15 @@ target 'TestProject' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
+
+  pod 'react-native-blur', :path => '../node_modules/@react-native-community/blur'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'TestProjectTests' do
     inherit! :complete
     # Pods for testing
